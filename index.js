@@ -378,16 +378,3 @@ class nocaptchaai {
     }
 
 }
-
-async function main() {
-    var hcaptcha = new nocaptchaai('fares.ghegad.com', 'de83f4cb-f9f0-4121-a296-df22dec584d3', 'fghegad-d9e9c1c6-4475-151f-c564-c85365a5ac35');
-
-    var db=Date.now();
-    var captcha = await hcaptcha.slove();
-    var de=Date.now();
-    console.log(captcha);
-    console.log(de-db);
-    console.log(await hcaptcha.test("0x3f31Fcbe04C2c8dFaC5b5F94f553B7875dc80C96",captcha))
-}
-
-main();
