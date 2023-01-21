@@ -1,6 +1,6 @@
-import request from 'request';
-import axios from 'axios';
-import puppeteer from 'puppeteer';
+var request = require('request');
+var axios = require('axios');
+var puppeteer = require('puppeteer');
 
 class nocaptchaai {
     sitekey = null;
@@ -378,3 +378,4 @@ class nocaptchaai {
     }
 
 }
+module.exports = nocaptchaai;
